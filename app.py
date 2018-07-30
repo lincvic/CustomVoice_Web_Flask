@@ -12,6 +12,7 @@ def hello_world():
 @app.route('/trans_voice', methods=['POST', 'GET'])
 def trans_voice():
     voiceText = request.form['voice']
+    print(voiceText)
     ssml = ssmlBuilder('zh-CN', 'wangyijiang1', voiceText)
 
     creatRequest(ssml)

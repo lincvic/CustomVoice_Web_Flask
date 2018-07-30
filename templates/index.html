@@ -37,7 +37,7 @@
                 <p><br>点击下面按钮上传文本</p>
                 <form action="{{ url_for('trans_voice') }}" method="post">
                     <ul class="actions">
-                        <li> <input type="text" name="voice"/></li>
+                        <li> <textarea name="voice" id="message" placeholder="在这里输入文本" rows="6"></textarea></li>
                         <li> <button type="submit" class="button primary color1 circle icon fa-angle-double-right"/></li>
                     </ul>
                 </form>
