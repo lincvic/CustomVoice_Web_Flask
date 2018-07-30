@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Custom Voice</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/main.css') }}"/>
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/noscript.css') }}"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Panel (Banner) -->
+        <section class="panel banner right">
+            <div class="content color0 span-3-75">
+                <h1 class="major">转换结果</h1>
+                <p>点击下方播放器播放</p>
+
+                <p>
+                    <audio src="{{ url_for('static',filename='audio/output.wav') }}" autoplay controls loop>HTML 5 Error</audio>
+                </p>
+
+            </div>
+            <div class="image filtered span-1-75" data-position="25% 25%">
+                <img src="{{ url_for('static',filename='images/pic01.jpg') }}" alt=""/>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="copyright">&copy; CustomVoice. Design: <a href="https://github.com/lincvic">Wang</a>.</div>
+
+    </div>
+
+</div>
+<!-- Scripts -->
+<script src="{{ url_for('static',filename='assets/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/js/browser.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/js/breakpoints.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>
